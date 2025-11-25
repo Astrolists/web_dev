@@ -1,0 +1,42 @@
+<!--xp Javascript Hidden Image-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demon Slayer</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Spoiler-free Summary</h1>
+
+<p>Demon Slayer is a dark fantasy anime following Tanjiro Kamado, a young, 15 year old boy who lives with his loving family. One day, however, he is met with misfortune, and his sister undergoes a terrifying transformation. After this, he joins a corporation called The Demon Slayer Corps, a corporation made for slaying demons, which is what turned his sister undergo the transformation.</p>
+<h2>Episode 1 Summary</h2>
+<p>Tanjiro Kamado is a young boy who, after coming home one day from selling coal in a nearby village, finds his entire family dead with the exception of his sister. As he tries to take his sister to safety, as she is clinging onto the edge of life. However, as he is transporting her, she wakes up and begins to exhibit demonic traits, as she has undergone a transformation to become a demon. After this, he encounters Giyu, a man in the Demon Slayer Corps. who tries to kill her. </p>
+
+<div id="blue-wrapper" style="border:1px solid black; padding:10px; display:inline-block;">
+    Hover here
+    <img id="blue" src="https://m.media-amazon.com/images/M/MV5BMWU1OGEwNmQtNGM3MS00YTYyLThmYmMtN2FjYzQzNzNmNTE0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Demon Slayer Cover" height="250px" style="display:none;">
+</div>
+
+<script>
+    const wrapper = document.getElementById("blue-wrapper");
+    const image = document.getElementById("blue");
+
+    wrapper.addEventListener("mouseover", function () {
+        image.style.display = "block";
+    });
+
+    wrapper.addEventListener("mouseout", function () {
+        image.style.display = "none";
+    });
+</script>
+
+</body>
+</html>
