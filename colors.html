@@ -1,29 +1,48 @@
 <!--xp HTML Colors Practice-->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <body>
+<head>
     <title>Color Theory</title>
-    <meta charset = "UTF">
+    <meta charset="UTF-8">
+
     <style>
         div{
             height: 150px;
-            width:150px;
-            border: solid 3px rgb(63, 73, 164);
-       9     font-style:rgb(250, 250, 153)
-            
+            width: 150px;
+            border: solid 3px black;
+        }
+
+        #complementary {
+            background-color: blue;
+            color: orange;
+            border-color: orange;
+        }
+
+        #analogous {
+            background-color: green;
+            color: yellow;
+            border-color: yellowgreen;
+        }
+
+        #triadic {
+            background-color: red;
+            color: yellow;
+            border-color: blue;
         }
     </style>
-    </head>
-    <body>
-        <div id="Complementary">
-            <p>Complementary</p>
-            
-        </div>   
-             <div id="Analogous">
-            <p>Analogous</p>
-        </div>
-                <div id="Triadic">
-            <p>Triadic</p>
-        </div>
-    </body>
+</head>
+
+<body>
+    <div id="complementary">
+        <p>Complementary</p>
+    </div>
+
+    <div id="analogous">
+        <p>Analogous</p>
+    </div>
+
+    <div id="triadic">
+        <p>Triadic</p>
+    </div>
+</body>
+</html>
