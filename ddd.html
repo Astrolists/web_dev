@@ -1,0 +1,18 @@
+<div id="crazy" style="border:1px solid black; padding:10px; display:inline-block;">
+                    Hover here
+                    <img id="crazy2" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Logo_Death_Note.jpg"
+                        alt="Death Note" height="250px" style="display:none;">
+                </div>
+              <script>
+                    const wrapper = document.getElementById("crazy");
+                    const image = document.getElementById("crazy2");
+
+                    wrapper.addEventListener("mouseover", function () {
+                        image.style.display = "block";
+                    });
+
+                    wrapper.addEventListener("mouseout", function () {
+                        image.style.display = "none";
+                    });
+                </script>  
+
