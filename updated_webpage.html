@@ -1,4 +1,4 @@
-<!--xp HTML First Web page-->
+<!--xp HTML FINISHED Web page-->
 <!DOCTYPE html>
 <html lang="eng">
 
@@ -52,7 +52,8 @@
         .flex-column {
             flex-direction: column;
         }
-        #hidden{
+
+        #hidden {
             display: none;
             margin-top: 20px
         }
@@ -76,11 +77,11 @@
             <img src="https://static.wikia.nocookie.net/deathnote/images/1/1d/Light_Holding_Death_Note.png/revision/latest?cb=20210215131958"
                 alt="Light picking the notebook up" height="200px" />
 
-                <div id="crazy" style="border:1px solid white; padding:10px; display:inline-block;">
-                    Hover here
-                    <img id="crazy2" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Logo_Death_Note.jpg"
-                        alt="Death Note" height="250px" style="display:none;">
-                                      <script>
+            <div id="crazy" style="border:1px solid white; padding:10px; display:inline-block;">
+                Hover here
+                <img id="crazy2" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Logo_Death_Note.jpg"
+                    alt="Death Note" height="250px" style="display:none;">
+                <script>
                     const wrapper = document.getElementById("crazy");
                     const image = document.getElementById("crazy2");
 
@@ -91,9 +92,39 @@
                     wrapper.addEventListener("mouseout", function () {
                         image.style.display = "none";
                     });
-                </script>  
+                </script>
+            </div>
 
-                </div>
+
+            <style>
+                .img-container img {
+                    width: 200px;
+                    height: auto;
+                    display: block;
+                }
+
+                .img-container .hover {
+                    display: none;
+                }
+
+                .img-container:hover .normal {
+                    display: none;
+                }
+
+                .img-container:hover .hover {
+                    display: block;
+                }
+            </style>
+
+            <div class="img-container">
+                <img class="normal"
+                    src="https://static.wikia.nocookie.net/listofdeaths/images/8/8c/Death_Note_Poster.jpg/revision/latest?cb=20200709085505">
+                <img class="hover"
+                    src="https://cms.rhinoshield.app/public/images/DN_banner_1800_dac1a50875.jpg">
+            </div>
+
+
+
             <img src="https://pm1.aminoapps.com/6084/a497ec21c572ceacadc459ba24a2befc6d09e699_hq.jpg" alt="Labubu"
                 height="200px" />
         </div>
@@ -103,34 +134,30 @@
         <p>A smart yet disenchanted student Light Yagami finds a mysterious notebook one day in a school courtyard. He
             quickly finds out this book can end the life of anyone whose name he writes upon the pages of said book.
             Following this, an investigation is put forth after the mysterious deaths of many criminals. </p>
-             <div>
-                <div class = "labubu">
-                    <button onclick="toggleExtra()"style="padding:10px 20px; font-size:18px; border-radius: 10px;">
+        <div>
+            <style>
+                #hidden {
+                    display: none;
+                }
+
+
+                .reveal-btn:hover + #hidden {
+                    display: block;
+                }
+            </style>
+
+            <div class="labubu">
+                <button class="reveal-btn" style="padding:10px 20px; font-size:18px; border-radius: 10px;">
                     Show More
-                    </button>
-                    </div id ="hidden">
-                        <p>Death Note is very mystery heavy. If you have heart problems I advise against viewing this television series, as it may be intensive on it.</p>
-                     </div>
+                </button>
+
+                <div id="hidden">
+                    <p>
+                        Death Note is very mystery heavy. If you have heart problems I advise against
+                        viewing this television series, as it may be intensive on it.
+                    </p>
                 </div>
             </div>
-        <script>
-            function toggleExtra(){
-                const section = document.getElementById("hidden");
-                const button = event.target;
-
-                if(section.style.display==="none"){
-                    section.style.display = "block";
-                    button.textContent = "Hide";
-                }else{
-                    section.style.display = "none";
-                    button.textContent = "show More";
-                }
-
-                    
-                }
-            
-        </script>
-            
 
             <p>Here is a list of some of the most prominent characters:</p>
 
@@ -141,13 +168,12 @@
                 <li>Teru Mikami</li>
                 <li>Misa Amane</li>
                 <li>Matsuda</li>
-            </ol >
-            </div >
-            
-                
-                    <a href="https://en.wikipedia.org/wiki/Death_Note" target="blank">
-                        death note page
-                    </a>
-                </div>
-        <body>
-    </html>
+            </ol>
+        </div>
+
+        <a href="https://en.wikipedia.org/wiki/Death_Note" target="blank">
+            Death Note Page
+        </a>
+    </div>
+<body>
+</html>
