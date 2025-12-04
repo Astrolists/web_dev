@@ -1,0 +1,187 @@
+<!--xp HTML FINISHED Web page-->
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <Meta charset="UTF-8">
+    <title>Staycation</title>
+    <style>
+        body {
+            background-color: rgb(119, 119, 119);
+
+            color: rgb(137, 81, 41);
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 20px;
+
+        }
+        
+        h1,
+        h2,
+        h3,
+        p,
+        ol {
+            margin: 25 px;
+            padding: 15 px;
+        }
+
+        head,
+        h1,
+        p {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Arial, sans-serif;
+
+
+        }
+
+        #photo {
+            height: 20%;
+            width: 20%;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .flex-column {
+            flex-direction: column;
+        }
+
+        #hidden {
+            display: none;
+            margin-top: 20px
+        }
+
+        #content-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 20px
+            }
+            
+
+    </style>
+
+    <head>
+        <title>Palisade State Park </title>
+        <meta charset="UTF-8">
+    </head>
+
+<body class="flex flex-column">
+    <h1>Palisade State Park</h1>
+    <div id ="content-wrapper">
+    <div>
+        <h2>About Palisade State Park</h2>
+        <div class="flex">
+            <p>Palisade State Park is a state park in central UT, north of St. George </p>
+            <img src="https://static.wikia.nocookie.net/deathnote/images/1/1d/Light_Holding_Death_Note.png/revision/latest?cb=20210215131958"
+                alt="Light picking the notebook up" height="200px" />
+
+            <div id="crazy" style="border:1px solid white; padding:10px; display:inline-block;">
+                Hover here
+                <img id="crazy2" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Logo_Death_Note.jpg"
+                    alt="Death Note" height="250px" style="display:none;">
+                <script>
+                    const wrapper = document.getElementById("crazy");
+                    const image = document.getElementById("crazy2");
+
+                    wrapper.addEventListener("mouseover", function () {
+                        image.style.display = "block";
+                    });
+
+                    wrapper.addEventListener("mouseout", function () {
+                        image.style.display = "none";
+                    });
+                </script>
+            </div>
+
+
+            <style>
+                .img-container img {
+                    width: 200px;
+                    height: auto;
+                    display: block;
+                }
+
+                .img-container .hover {
+                    display: none;
+                }
+
+                .img-container:hover .normal {
+                    display: none;
+                }
+
+                .img-container:hover .hover {
+                    display: block;
+                }
+            </style>
+
+            <div class="img-container">
+                <img class="normal"
+                    src="https://static.wikia.nocookie.net/listofdeaths/images/8/8c/Death_Note_Poster.jpg/revision/latest?cb=20200709085505">
+                <img class="hover"
+                    src="https://cms.rhinoshield.app/public/images/DN_banner_1800_dac1a50875.jpg">
+            </div>
+
+
+
+            <img src="https://pm1.aminoapps.com/6084/a497ec21c572ceacadc459ba24a2befc6d09e699_hq.jpg" alt="Labubu"
+                height="200px" />
+        </div>
+    </div>
+    <h3>Activities to do</h3>
+    <div class="flex">
+        
+        <p>A smart yet disenchanted student Light Yagami finds a mysterious notebook one day in a school courtyard. He
+            quickly finds out this book can end the life of anyone whose name he writes upon the pages of said book.
+            Following this, an investigation is put forth after the mysterious deaths of many criminals. </p>
+
+        <div>
+            <style>
+                #hidden {
+                    display: none;
+                }
+
+
+                .reveal-btn:hover + #hidden {
+                    display: block;
+                }
+            </style>
+
+            <div class="labubu">
+                <button class="reveal-btn" style="padding:10px 20px; font-size:18px; border-radius: 10px;">
+                    Show More
+                </button>
+
+                <div id="hidden">
+                    <p>
+                        Death Note is very mystery heavy. If you have heart problems I advise against
+                        viewing this television series, as it may be intensive on it.
+                    </p>
+                </div>
+            </div>
+
+            <p>Here is a list of some of the most prominent characters:</p>
+
+            <ol>
+                <li>L</li>
+                <li>Light Yagami</li>
+                <li>Soichiro Yagami</li>
+                <li>Teru Mikami</li>
+                <li>Misa Amane</li>
+                <li>Matsuda</li>
+            </ol>
+        </div>
+
+        <a href="https://en.wikipedia.org/wiki/Death_Note" target="blank">
+            Death Note Page
+        </a>
+    </div>
+    </div>
+<body>
+</html>
