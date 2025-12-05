@@ -7,9 +7,9 @@
     <title>Staycation</title>
     <style>
         body {
-            background-color: rgb(228, 128, 114);
+            background-color: rgb(249, 198, 215);
 
-            color: rgb(135, 206, 235);
+            color: rgb(47, 77, 148);
             font-family: "Arial", sans-serif;
             margin: 0;
             padding: 20px;
@@ -23,10 +23,14 @@
         ol {
             margin: 25 px;
             padding: 15 px;
+            text-align: center;
         }
 
         head,
         h1,
+        p,
+        p,
+        p,
         p {
             text-align: center;
         }
@@ -49,9 +53,6 @@
             flex-wrap: wrap;
         }
 
-        .flex-column {
-            flex-direction: column;
-        }
 
         #hidden {
             display: none;
@@ -61,9 +62,12 @@
         #content-wrapper {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            margin-top: 20px
+            margin-top: 90px;
+            font-size: larger;
             }
-            
+            #images
+            {border-radius: 5 px;
+            }
 
     </style>
 
@@ -78,13 +82,11 @@
     <div>
         <h2>About Palisade State Park</h2>
         <div class="flex">
-            <p>Palisade State Park is a state park in central UT, north of St. George </p>
-            <img src="https://static.wikia.nocookie.net/deathnote/images/1/1d/Light_Holding_Death_Note.png/revision/latest?cb=20210215131958"
-                alt="Light picking the notebook up" height="200px" />
+            <p>Palisade State Park is a state park in central UT, north of St. George that offers many activities such as hiking, boating, and more. It is an ideal destination for many families due to range of activities & diverse wildlife. Many agree, calling it the best state park in Utah! </p>
 
             <div id="crazy" style="border:1px solid white; padding:10px; display:inline-block;">
                 Hover here
-                <img id="crazy2" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Logo_Death_Note.jpg"
+                <img id="crazy2" src="https://utahstateparks.reserveamerica.com/webphotos/UT/pid344641/0/540x360.jpg"
                     alt="Death Note" height="250px" style="display:none;">
                 <script>
                     const wrapper = document.getElementById("crazy");
@@ -121,26 +123,35 @@
                 }
             </style>
 
+            <div>
             <div class="img-container">
+                <div>
+                    <div>
                 <img class="normal"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm06C-OXtSHdUG3fb9XHodCOsfsH2R4Ny8Yg&s">
+                    src="https://utahstateparks.reserveamerica.com/webphotos/UT/pid344641/0/540x360.jpg">
+                    </div>
+                    <div>
                 <img class="hover"
                     src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/2f/f4/f5/20150912-082649-001-largejpg.jpg?w=900&h=-1&s=1">
+                    </div>
+                 </div>
+            </div>
             </div>
 
 
 
             <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/2f/f4/f5/20150912-082649-001-largejpg.jpg?w=900&h=-1&s=1" alt="Labubu"
                 height="200px" />
+            <img src ="https://upload.wikimedia.org/wikipedia/commons/9/98/King_and_Queen_Rock.jpg" alt="labubu"height="200px"/>
         </div>
     </div>
+    <div>
     <h3>Activities to do</h3>
+    <p>palisade State Park offers many activities such as hiking, boating, kayaking/canoeing, swimming in the beautiful, crystal clear waters, hunting, birdwatching and observing wildlife, taking a drive through local scenery</p>
+    </div>
     <div class="flex">
         
-        <p>A smart yet disenchanted student Light Yagami finds a mysterious notebook one day in a school courtyard. He
-            quickly finds out this book can end the life of anyone whose name he writes upon the pages of said book.
-            Following this, an investigation is put forth after the mysterious deaths of many criminals. </p>
-
+      
         <div>
             <style>
                 #hidden {
@@ -160,24 +171,23 @@
 
                 <div id="hidden">
                     <p>
-                        Death Note is very mystery heavy. If you have heart problems I advise against
-                        viewing this television series, as it may be intensive on it.
+                        Palisade State Park offers $100 cabins for people to stay in! this is an excellent deal as the cabins are large enough to hold families and are available for multi-day stays to Palisade. Make sure to get one before they sell out for the summer!
                     </p>
                 </div>
             </div>
-
+            <style></style>
+            <div>
             <p>Reasons you Should Visit</p>
 
             <ol>
                 <li>It's only $15 to get in</li>
                 <li>You can go camping or fishing</li>
                 <li>It has some of the best golf courses in Utah</li>
-                <li>Teru Mikami</li>
-                <li>Misa Amane</li>
-                <li>Matsuda</li>
+                <li>It offers amazing mountains nearby for hiking</li>
             </ol>
+    </style>
         </div>
-
+        </div>
         <a href="https://stateparks.utah.gov/parks/palisade/" target="blank">
             UT Government Page
         </a>
